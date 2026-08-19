@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>我把一个视频号博主的505条视频全扒下来，转成文字，然后发现他根本不是个珠宝博主</title>
+<meta name="description" content="一个较真的人，把视频号博主「自己造船的路飞」的505条视频全部下载、转录成文字稿，用77万字的数据，拆开了他的核心思想「人选天选论」，以及藏在财富、航海、珠宝背后的同一套语法。" />
+<meta property="og:title" content="我把一个视频号博主的505条视频全扒下来，转成文字" />
+<meta property="og:description" content="505条视频，503份转录稿，约77万字。拆开「自己造船的路飞」的「人选天选论」，以及藏在财富、航海、珠宝背后的同一套语法。" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://zhangchongyang01.github.io/video-reports/luffy/cover.jpg" />
+<meta property="og:image:width" content="1216" />
+<meta property="og:image:height" content="832" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="我把一个视频号博主的505条视频全扒下来，转成文字" />
+<meta name="twitter:description" content="505条视频，503份转录稿，约77万字。拆开「自己造船的路飞」的「人选天选论」。" />
+<meta name="twitter:image" content="https://zhangchongyang01.github.io/video-reports/luffy/cover.jpg" />
+<style>
+  :root{
+    --bg:#fbfaf7; --ink:#1c1b18; --soft:#5a564e; --line:#e7e3da;
+    --accent:#b9862f; --accent2:#2f6f6a; --quote:#14302e; --card:#f4f1ea;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.85; font-size:18px; letter-spacing:.01em;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:0 22px 90px;}
+  /* hero */
+  .hero{position:relative; color:#f5f2ea; overflow:hidden; padding:118px 22px 64px; text-align:center;}
+  .hero .bg{position:absolute; inset:0; background-size:cover; background-position:center; filter:brightness(.42) saturate(1.05);}
+  .hero .bg:after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(8,16,22,.45),rgba(8,16,22,.78));}
+  .hero .in{position:relative; max-width:720px; margin:0 auto;}
+  .kicker{font-size:14px; letter-spacing:.32em; color:#e8c98a; margin-bottom:22px; text-transform:none;}
+  .hero h1{font-size:30px; line-height:1.4; font-weight:800; margin:0 0 22px; letter-spacing:.01em;}
+  .hero .sub{font-size:15px; color:#d8d2c6; font-weight:400; line-height:1.7;}
+  .byline{margin-top:26px; font-size:13px; color:#bcb6a8; letter-spacing:.04em;}
+  /* nav */
+  .nav{display:flex; flex-wrap:wrap; gap:8px 14px; justify-content:center; margin:30px auto 0; font-size:13px;}
+  .nav a{color:#e8c98a; text-decoration:none; border-bottom:1px solid rgba(232,201,138,.4); padding-bottom:2px;}
+  /* content */
+  p{margin:22px 0;}
+  .lead{font-size:20px; color:#2c2a25; font-weight:500; line-height:1.8;}
+  strong{font-weight:700; color:#15140f;}
+  em{font-style:normal; color:var(--accent2); font-weight:600;}
+  /* pull quote divider */
+  .break{margin:54px 0; text-align:center; font-size:22px; font-weight:800; line-height:1.55; color:var(--quote); letter-spacing:.02em;}
+  .break:before,.break:after{content:""; display:block; width:42px; height:2px; background:var(--accent); margin:0 auto 22px; opacity:.7;}
+  .break:after{margin:22px auto 0;}
+  /* quote card */
+  .qcard{margin:34px 0; padding:26px 26px; background:var(--card); border-left:4px solid var(--accent); border-radius:2px;}
+  .qcard .txt{font-size:19px; line-height:1.8; color:#241f17; font-weight:500;}
+  .qcard .src{margin-top:12px; font-size:13px; color:var(--soft); letter-spacing:.03em;}
+  /* chart */
+  .chart{margin:34px 0; padding:26px 22px; background:#fff; border:1px solid var(--line); border-radius:8px;}
+  .chart h4{margin:0 0 18px; font-size:14px; color:var(--soft); font-weight:600; letter-spacing:.06em;}
+  .row{display:flex; align-items:center; margin:11px 0; font-size:14px;}
+  .row .lab{width:128px; flex:none; color:#2c2a25; text-align:right; padding-right:12px;}
+  .row .track{flex:1; background:#efece4; border-radius:3px; height:18px; overflow:hidden;}
+  .row .fill{height:100%; border-radius:3px; background:linear-gradient(90deg,var(--accent),#d8a448);}
+  .row .num{width:54px; flex:none; text-align:right; color:var(--soft); font-variant-numeric:tabular-nums; padding-left:10px;}
+  .chart .note{margin-top:14px; font-size:12.5px; color:#8a8478; line-height:1.6;}
+  /* two-col mini */
+  .twocol{display:flex; gap:14px; flex-wrap:wrap; margin:30px 0;}
+  .twocol .box{flex:1; min-width:150px; background:#fff; border:1px solid var(--line); border-radius:8px; padding:18px;}
+  .twocol .box .big{font-size:30px; font-weight:800; color:var(--accent2);}
+  .twocol .box .cap{font-size:13px; color:var(--soft); margin-top:4px;}
+  /* callout */
+  .notebox{margin:34px 0; padding:20px 22px; background:#fdf6e9; border:1px solid #ecd9ad; border-radius:8px; font-size:15px; color:#5b4a26; line-height:1.75;}
+  .notebox b{color:#7a5d1f;}
+  /* footer */
+  footer{margin-top:64px; padding-top:28px; border-top:1px solid var(--line); font-size:13.5px; color:var(--soft); line-height:1.8;}
+  footer b{color:#3a362e;}
+  .tag{display:inline-block; background:#efece4; color:#6b655a; font-size:12px; padding:3px 10px; border-radius:20px; margin:0 6px 8px 0;}
+  a.inlink{color:var(--accent2); text-decoration:none; border-bottom:1px solid rgba(47,111,106,.4);}
+  @media(max-width:560px){
+    body{font-size:17px}
+    .hero h1{font-size:24px}
+    .row .lab{width:96px; font-size:12.5px}
+    .lead{font-size:18px}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="bg" style="background-image:url('cover.jpg')"></div>
+  <div class="in">
+    <div class="kicker">关 于 一 个 视 频 号 博 主 的 77 万 字</div>
+    <h1>我把一个视频号博主的505条视频全扒下来，转成文字，然后发现他根本不是个珠宝博主</h1>
+    <div class="sub">他叫「自己造船的路飞」。表面上是卖翡翠的、造船环球的、聊财富的。<br/>我把他 505 条视频全部下载、转录，用数据拆开之后，看到的完全是另一回事。</div>
+    <div class="byline">数据：505 条视频 · 503 份转录稿 · 约 77 万字　｜　方法：批量下载 + 语音转录 + 主题聚类</div>
+    <nav class="nav">
+      <a href="#p1">我干了件有点疯的事</a>
+      <a href="#p2">他其实是个哲学家</a>
+      <a href="#p3">人选天选论这条链</a>
+      <a href="#p4">货，还是祸</a>
+      <a href="#p5">藏在血肉里的语法</a>
+      <a href="#p6">几个要小心的坑</a>
+      <a href="#p7">想看哪块，怎么看</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <p class="lead" id="p1">事情是这样的。前阵子我刷到一个视频号博主，叫「自己造船的路飞」。看简介，珠宝商、自己造船环球航海、聊认知和财富。我本来只想随便看看，结果越看越觉得不对劲，这哥们讲的东西，好像有一套特别严密的内核。</p>
+
+  <p>但是_video号这玩意，刷着刷着就忘了。我想认真研究他，靠脑子记根本不行。于是我干了一件有点疯的事，把他整个视频号，505 条视频，全给下载下来了。</p>
+
+  <p>29 个 G。然后我跑了一个语音转文字的模型，把每条视频都转成了文字稿。最后能成功转录的是 503 条，有 2 条下载的时候文件就损坏了，转不出来，占 0.4%，基本不影响。</p>
+
+  <p>加起来，大概 77 万字。</p>
+
+  <p>对，你没看错，77 万字。比绝大部分作家一辈子写的书都多。我就这么拥有了这哥们一整座内容矿山，然后我开始用数据去扒它。</p>
+
+  <div class="break">扒完之后我最大的感受是，<br/>我们可能都误会他是谁了。</div>
+
+  <p id="p2">你要是只看他视频的封面和标题，会觉得这就是个珠宝博主，或者是个炫富的航海玩家，偶尔聊点赚钱认知。毕竟他讲翡翠、讲游艇、讲西沙科莫多，听着就很「有钱人的闲聊」。</p>
+
+  <p>但当我把 503 份文字稿全部按内容重新归类，结果让我愣了一下。</p>
+
+  <div class="twocol">
+    <div class="box"><div class="big">272</div><div class="cap">条在讲同一套认知哲学，占总转录稿过半</div></div>
+    <div class="box"><div class="big">70%</div><div class="cap">这套哲学里，七成内容是在解构「钱」</div></div>
+  </div>
+
+  <p>他真正在干的事，是花几百条视频，搭建了一整套关于「人怎么选、命运怎么运转、运气到底是什么」的思想体系。他管这套东西叫「人选天选论」。</p>
+
+  <p>珠宝、航海、甚至聊 AI，在他那儿都是壳。骨架，是这套哲学。我先把骨架拆开给你看。</p>
+
+  <div class="break" id="p3">人选天选论，<br/>说到底是一条七节的链子。</div>
+
+  <p>第一节点，叫「贪恐二元」。路飞认为，人这辈子所有的行为动机，归根到底只有两种原始欲望，一个叫贪，一个叫恐惧。没有了。你以为你有一万个念头，扒到底，全是这俩在驱动。</p>
+
+  <p>第二节点，是这条链最妙的地方，叫「人选天选机制」。你在贪或者恐的状态里，做一个动作，拿起来，或者放下，这就构成了他定义的「福」和「货」。</p>
+
+  <div class="qcard">
+    <div class="txt">我们在贪婪中拿起来、去获取，这叫选福。我们在贪婪中放下、去放弃，这叫选货。我们在恐惧中放下、去逃避，这也叫选福。我们在恐惧中拿起、去面对，这叫选货。</div>
+    <div class="src">—— 转录自《人选天选，18分钟全程干货，没耐心的不要看》</div>
+  </div>
+
+  <p>你品一下这句话。福和货，在他那儿不是道德词，没有好坏。顺着你的贪恐走、图舒服的那条，叫福。反着走、去承担去面对的那条难路，叫货。货，就是实实在在的代价。</p>
+
+  <p>第三节点，叫「运气」。这是全链子里最让人心里一紧的一节。</p>
+
+  <div class="qcard">
+    <div class="txt">我们老是讲运气运气运气，其实你的运气，就是别人的选择。而别人的运气，就是你的选择。</div>
+    <div class="src">—— 转录自《人选天选，18分钟全程干货》</div>
+  </div>
+
+  <p>他举了个例子，你面试没过，你以为自己运气差去拜佛。但真实的因果是，面试官在她的贪恐里做了个选择，选了给她塞红包的那个人。她的人选，变成了你的天选。你的成败，常常是被别人的贪恐推出来的。</p>
+
+  <p>这一下，运气这个词就被他扒掉了神秘外衣。</p>
+
+  <p>第四节点，「没有对错，只有选择」。世界是一张所有人选择交织的因果网，每个选择都牵连别人，没有单纯的善恶，只有选择及其涟漪。</p>
+
+  <p>第五节点，是全链子最硬的一节，叫「承担代价」。</p>
+
+  <div class="qcard">
+    <div class="txt">一个人怎样可以做到让这个世界都恐惧你，就是你愿意为你的结果承担代价。</div>
+    <div class="src">—— 转录自《人选天选，18分钟全程干货》</div>
+  </div>
+
+  <p>谁敢为结果买单，谁就把主动权夺回了自己手里。这一节，是他整套东西里最不「佛系」、最有力量的地方。</p>
+
+  <p>第六节点，叫「觉察真实」，破除自欺。这节他用了个特别打动我的小故事。少年时他在溪边看见一块石头，发出蓝光，美极了，他捞起来，发现就是块普通石头。他悟到，我们常常先看见一个结果，再拼命给它找原因、找证据，只为证明「我没错」。</p>
+
+  <div class="qcard">
+    <div class="txt">这道蓝光，好像从来都不存在于这个石头上，也不在水里，它只是在我的心里。</div>
+    <div class="src">—— 转录自《人选天选论》第二章 走向觉醒的「人之路」</div>
+  </div>
+
+  <p>觉醒，不是变得多厉害，是你能老老实实看见，自己心里那道蓝光，其实一直都是自个儿投射上去的。</p>
+
+  <p>我用数据验证了这套骨架是不是真成立。把 272 篇认知稿全量统计了一遍核心概念的出现次数，出来的顺序很有意思。</p>
+
+  <div class="chart">
+    <h4>272 篇认知稿 · 核心概念词频（越高越早被反复铺垫）</h4>
+    <div class="row"><span class="lab">贪恐欲望</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="num">606</span></div>
+    <div class="row"><span class="lab">人选天选机制</span><span class="track"><span class="fill" style="width:75%"></span></span><span class="num">451</span></div>
+    <div class="row"><span class="lab">选择</span><span class="track"><span class="fill" style="width:60%"></span></span><span class="num">361</span></div>
+    <div class="row"><span class="lab">放下·舍得</span><span class="track"><span class="fill" style="width:43%"></span></span><span class="num">261</span></div>
+    <div class="row"><span class="lab">代价·承担</span><span class="track"><span class="fill" style="width:39%"></span></span><span class="num">237</span></div>
+    <div class="note">词频前重后轻，说明他把最多笔墨，放在「欲望驱动」和「选择机制」这两块地基上，后面的承担和觉察，是站在这两块上的。</div>
+  </div>
+
+  <div class="break" id="p4">说到这，得插一句。<br/>你之前问过我，人选「福」、天选「货」，<br/>那个货，到底是货，还是祸。</div>
+
+  <p>是货，不是祸。但我必须说，你这个问题问得特别准，因为路飞就是故意在玩这个同音梗，俩字都读 huò，所以他才老被混。</p>
+
+  <p>货，是代价，是实质，是你逃不掉要付的那笔账。最经典的一句配对是，「人选福，天选货」，你图舒服选了福，老天就让你失去点什么，失去什么不知道，天选不可测。而反向那句，「人选货，天选福」，你选了难但对的，老天反手给你一个你想要的。</p>
+
+  <p>那「祸」从哪来呢。他体系里真有「祸」这个字，出现在「天选的祸与福」这种表达里，讲的是进化的代价，老天既降祸也降福。而更妙的一层是，如果你一直选福、一直逃避、一直不还账，那笔迟早要付的「货」，最后真的会以「祸」的形式砸你头上。</p>
+
+  <p>货与祸，同音，也同构。他这整套话术，骨子里就在讲这件事，你以为天选的货听起来像天降祸，但只要你一直选福不还账，它迟早成真。这层双关，是他整本书最精巧的修辞机关。</p>
+
+  <div class="break" id="p5">骨架讲完，<br/>再聊血肉。</div>
+
+  <p>我把剩下 191 篇非认知稿子也按内容重新归了类。这里有个特别关键、也特别反直觉的发现，先说出来。</p>
+
+  <div class="chart">
+    <h4>505 条视频按内容重分类后的主题分布</h4>
+    <div class="row"><span class="lab">认知·人选天选论</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="num">272</span></div>
+    <div class="row"><span class="lab">人生·杂谈</span><span class="track"><span class="fill" style="width:34%"></span></span><span class="num">93</span></div>
+    <div class="row"><span class="lab">财富·投资</span><span class="track"><span class="fill" style="width:12%"></span></span><span class="num">33</span></div>
+    <div class="row"><span class="lab">航海·造船</span><span class="track"><span class="fill" style="width:8%"></span></span><span class="num">21</span></div>
+    <div class="row"><span class="lab">旅行·生活</span><span class="track"><span class="fill" style="width:5%"></span></span><span class="num">13</span></div>
+    <div class="row"><span class="lab">情感·连麦</span><span class="track"><span class="fill" style="width:3%"></span></span><span class="num">8</span></div>
+    <div class="row"><span class="lab">珠宝·翡翠</span><span class="track"><span class="fill" style="width:2%"></span></span><span class="num">6</span></div>
+    <div class="row"><span class="lab">创业·商业</span><span class="track"><span class="fill" style="width:1.5%"></span></span><span class="num">4</span></div>
+    <div class="row"><span class="lab">AI·科技</span><span class="track"><span class="fill" style="width:1.5%"></span></span><span class="num">4</span></div>
+    <div class="note">看文件名，珠宝有 35 条、航海 22 条，看着不少。但按正文内容重算，珠宝纯主题只剩 6 条、航海 21 条。原因很简单，他把珠宝和航海，大量当成「人选天选论」的比喻素材来讲，不是在教你买石头、开船。</div>
+  </div>
+
+  <p>所以那 93 篇没打标签的「人生杂谈」，加上财富那 33 篇，才是他除认知外真正独立成线的应用主线。我挑几条最扎心的给你看。</p>
+
+  <p><em>财富这条线，是「运气论」的实战版。</em>他有一个特别刺耳但很诚实的判断，能赚到钱，100% 是靠运气。你要是还觉得自己赚钱靠能力靠智慧，那这视频你可以划走了。而守钱，比赚钱痛苦一百倍，他甚至自创了一个词，叫「逍遥癌」，说有钱人因为守财产生的那种诅咒，只能延缓，没法根除。</p>
+
+  <p>牛市来了普通人该干嘛，他的答案是，别去炒股，守好自己的生意，把别人在牛市里赚的钱，挣到你手里。靠运气挣的钱，来得快去得也快，靠自己本事在市场里挣的，谁也拿不走。</p>
+
+  <p><em>航海这条线，是把决策变成一套心法。</em>他整个船队是投票机制，船长最高 3 分，他 2 分，超过 7 分才出发。所有人都是航海小白，所以大家要同难，要一起晕船。出发夜遇 8 级风、差点撞船，他反而觉得，这心情，又回到了当年被退船、去造船的日子。他把风险，活成了回归初心的隐喻。</p>
+
+  <p>还有个细节我特别喜欢。海上发动机坏了，他靠一个自己搭的理性 AI，叫「天机」，跟它沟通，花了四个小时把发动机修好了。一个卖石头的、刚学会造船的人，在海上跟自己的 AI 修发动机。这画面，有点浪漫，也有点未来。</p>
+
+  <p><em>珠宝这条线，内行到劝你别碰。</em>作为真珠宝商，他讲产业链是「两头尖、中间平」，矿主和直播间一起挤压中间所有环节。他反复劝普通人，赌石别碰、雕刻件别买、危地马拉料成品别碰。原话是，你们买不到源头、买不懂、也买不到便宜，等你想投资的时候，就像按金店价加两万块买黄金，还投个什么资。</p>
+
+  <p><em>情感连麦这条线，是他最接地气的内容。</em>粉丝连麦问，怎么判断一个老板值不值得跟随。他的判断标准特别损，你看他是不是天天换司机、天天换身边人，如果一个人连最清楚他的人都一直离开，那他做人有问题。转头他又点破提问者，你心里混杂着嫉妒、不屑、对自己家人的不爽，你是个表面自信实际自卑的人。毒舌，但共情。</p>
+
+  <p><em>AI 这条线，和他的认知体系同源。</em>他说，你被 AI 淘汰，说明你是庶民，而如果你做一个不会被淘汰的行业，那你可能本来就没价值。结论听着绕，其实是劝人，别追通用大模型，找一个垂直小领域，把 AI 扎进去，坚持 5 到 10 年，你就是这行最懂怎么用 AI 的人。</p>
+
+  <p>还有那 93 篇杂谈，标题里没统一标签，内容却极有价值。比如「富二代的代价」，他说富二代其实是弱势群体，小孩的自尊靠父母架构，不结实。比如「30 岁男人为什么这么难」，25 岁贷款买房买车，30 岁被裁，被迫创业必死，本末倒置，盯着资源不盯鱼在哪。</p>
+
+  <p>写到这里我发现了整件事最好玩的地方。不管他讲财富、航海、珠宝还是连麦，反复出现的，是同一套句式，我管它叫「路飞语法」。</p>
+
+  <div class="notebox">
+    <b>贯穿所有内容的七句母题</b><br/>
+    一，赚钱 100% 靠运气，能力是错觉。<br/>
+    二，反捷径、反投机幻觉，资源都是屁，捷径送到面前就走，没送到别死抓。<br/>
+    三，守比赚难，清醒的痛苦、逍遥癌、欲望阈值。<br/>
+    四，即刻止损、顺势而为，感情错了、事业错了，马上切断。<br/>
+    五，过犹不及，任何东西抓太紧就过了。<br/>
+    六，觉察真实、破除自欺，看见自己心里的嫉妒、自卑、投射。<br/>
+    七，天机（直觉）胜过控制，航海靠天机，AI 靠天机，连麦也靠天机。
+  </div>
+
+  <p>你看明白了吗。所有 topical 的内容，财富、航海、珠宝、连麦，全都是「人选天选论」的案例库。读懂了那套骨架，这堆血肉，你几乎能自己推演出来。他根本不是在讲不同的事，他是在用不同的故事，反复讲同一个道理。</p>
+
+  <div class="break" id="p6">话说回来，<br/>有几处坑，我得替他，也替你，标一下。</div>
+
+  <p>我是真的觉得这哥们东西有东西，但「有所为有所不为」，该提醒的得提醒。卡兹克那套价值观里，真诚是唯一捷径，不懂不装，有缺点直说。</p>
+
+  <p>第一，因果归因有时候过度。他用一碗牛肉粉导致外卖小哥出车祸的长链推演，把所有运气都归因到人的选择，这忽略了结构性和随机性的因子。世界里真有纯粹的倒霉，不是每个结果都有人选在背后。</p>
+
+  <p>第二，「没有对错，只有选择」，作为个人修行态度特别有力，但它一旦被外推成价值相对主义，就会弱化对真实伤害的辨别。有些事，就是有对错。</p>
+
+  <p>第三，「赚钱 100% 靠运气」「创业失败率 100%」这种，是激励性修辞，不是统计结论，别当绝对真理去套自己的人生。</p>
+
+  <p>第四，连麦里的建议，是个人的经验之谈，不是专业心理咨询。真遇到情绪或者关系的硬伤，该找专业的人，别只听一个视频号博主聊。</p>
+
+  <p>第五，也是我作为分析者得坦白的，这 503 份稿子，是语音识别转出来的，里面一定混着同音字和断句错误。我引用的原话，都做了最小必要的校正，但核心语义，我保证忠实于音频本身。</p>
+
+  <div class="break" id="p7">如果你也想翻翻这座矿，<br/>我给你一张地图。</div>
+
+  <p>想先建立骨架，去看那条 18 分钟的干货，那是整套理论最完整的一次口头阐述。然后看第二章（觉醒之路）和第六章（天权的裂痕），理解觉察，和理解不可控。</p>
+
+  <p>想学赚钱守财，直接冲财富系列，先《守钱真的很痛苦》，再《牛市，普通人怎么稳赚不赔》。想看探险造船，去航海系列，《0 起步造船 0 起步环球》接《科莫多》。想入行珠宝避坑，两篇连看就够，结论一句话，普通人别碰。职场年龄焦虑，去看那 93 篇杂谈里的《30 岁男人为什么那么难》和《富二代的代价》。</p>
+
+  <p>但我个人最推荐的读法，是反过来。先随便挑他一条视频看，觉得有意思了，再回头看那条 18 分钟干货。等骨架立住了，你再刷他任何一条，都会发现，哦，这又是那套语法在讲另一个故事。</p>
+
+  <p>到最后，我想回一下开头那道蓝光。</p>
+
+  <p>路飞讲了一整套关于选择、运气、代价的体系，听起来特别宏大，特别硬。但整座体系的门，其实是从一块溪边的石头开始的。少年看见蓝光，捞起，发现是块普通的石头。他没说你要变得多强，他只是说，你要诚实地看见，那道蓝光，从来都不在外面。</p>
+
+  <p>它只是在你的心里。</p>
+
+  <p style="margin-top:40px; color:#8a8478; font-size:15px;">以上，就是我把 505 条视频扒下来、转成 77 万字、再用数据拆了一遍之后，看到的「自己造船的路飞」。<br/>如果觉得这趟拆解有意思，欢迎转发给也在琢磨「运气到底是什么」的朋友。</p>
+
+  <footer>
+    <p><b>关于这份分析</b><br/>
+    全部 505 条视频下载自视频号「自己造船的路飞」，使用本地语音识别模型 Faster-Whisper（small 中文）转录为文字稿，503 条成功，2 条因下载损坏无法转录（占 0.4%）。主题分类由文件名标签结合正文关键词聚类得出，词频统计基于 272 篇认知系列全量文本。</p>
+    <p><b>一点说明</b><br/>
+    引用原话均整理自转录稿，部分口语、方音、同音字已做最小必要校正，核心语义忠实于音频。本文为个人学习研究用途，不代表原作者立场。</p>
+    <p><b>内容标签</b><br/>
+    <span class="tag">人选天选论</span><span class="tag">自己造船的路飞</span><span class="tag">认知哲学</span><span class="tag">财富认知</span><span class="tag">视频号分析</span><span class="tag">内容拆解</span></p>
+    <p style="margin-top:18px; color:#a39c8e;">视频与文字版权归「自己造船的路飞」所有。本文仅作数据分析与方法分享。</p>
+  </footer>
+
+</main>
+</body>
+</html>
